@@ -57,7 +57,7 @@ def get_jobs(url):
     chemin = r"/home/oussama/Jobs/emploiCi.csv"
     with open(chemin, "a") as f:
         for announcement in anoucements:
-            f.write(','.join(announcement) + '\n')
+            f.write(','.join(announcement) + '\t\n')
         
     return anoucements
     
